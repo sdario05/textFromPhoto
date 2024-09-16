@@ -98,7 +98,9 @@ class MainActivity : ComponentActivity() {
             if (resultCode == RESULT_OK) {
                 val result = data?.getStringExtra("uriFromFile")
                 val uri = result!!.toUri()
-                CropImage.activity(uri).start(this)
+                CropImage.activity(uri)
+                    .setCropMenuCropButtonTitle("Recortar")
+                    .start(this)
             } else {
                 Toast.makeText(this, "Error taking photo", Toast.LENGTH_SHORT).show()
             }
