@@ -57,6 +57,7 @@ dependencies {
     implementation(libs.squareup.picasso)
     implementation(libs.google.vision)
     implementation(libs.foto.apparat)
+    implementation(libs.constraint.layout)
 
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)

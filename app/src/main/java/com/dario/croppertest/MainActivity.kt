@@ -1,5 +1,6 @@
 package com.dario.croppertest
 
+import android.R.attr
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
@@ -7,16 +8,17 @@ import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.SparseArray
-import android.view.View
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
+import androidx.core.net.toUri
 import com.dario.croppertest.databinding.ActivityMainBinding
 import com.google.android.gms.vision.Frame
 import com.google.android.gms.vision.text.TextBlock
 import com.google.android.gms.vision.text.TextRecognizer
 import com.theartofdev.edmodo.cropper.CropImage
+
 
 @RequiresApi(Build.VERSION_CODES.M)
 class MainActivity : ComponentActivity() {
@@ -25,6 +27,7 @@ class MainActivity : ComponentActivity() {
     private var cameraPermission:  Array<String>? = null
     private var storagePermission:  Array<String>? = null
     val STORAGE_REQUEST = 200
+    val PHOTO_REQUEST_CODE = 300
     private var bitmap: Bitmap? = null
 
 
@@ -45,7 +48,8 @@ class MainActivity : ComponentActivity() {
         if (!checkStoragePermission()) {
             requestStoragePermission()
         } else {
-            CropImage.activity().start(this)
+            startActivityForResult(Intent(this, CameraActivity::class.java), PHOTO_REQUEST_CODE)
+            //CropImage.activity().start(this)
         }
     }
 
@@ -67,7 +71,8 @@ class MainActivity : ComponentActivity() {
             if (grantResults.size > 0) {
                 val writePermissionsAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED
                 if (writePermissionsAccepted) {
-                    CropImage.activity().start(this)
+                    startActivityForResult(Intent(this, CameraActivity::class.java), PHOTO_REQUEST_CODE)
+                    //CropImage.activity().start(this)
                 } else {
                     Toast.makeText(this, "PERMISSION ERROR", Toast.LENGTH_SHORT).show()
                 }
@@ -87,6 +92,15 @@ class MainActivity : ComponentActivity() {
                 }
             } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
                 Toast.makeText(this, "ERROR", Toast.LENGTH_SHORT).show()
+            }
+        }
+        if (requestCode == PHOTO_REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                val result = data?.getStringExtra("uriFromFile")
+                val uri = result!!.toUri()
+                CropImage.activity(uri).start(this)
+            } else {
+                Toast.makeText(this, "Error taking photo", Toast.LENGTH_SHORT).show()
             }
         }
     }

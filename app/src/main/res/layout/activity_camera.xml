@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <io.fotoapparat.view.CameraView
+            android:id="@+id/cameraView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <io.fotoapparat.view.FocusView
+                android:id="@+id/focusView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </io.fotoapparat.view.CameraView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/photoButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/background_take_picture_button"
+        android:padding="16dp"
+        android:src="@drawable/ic_camera_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/flashCheckBox"
+        android:layout_width="28dp"
+        android:layout_height="@dimen/space_xxlarge"
+        android:layout_gravity="start|top"
+        android:layout_margin="@dimen/space_xlarge"
+        android:background="@drawable/background_check_box_flash"
+        android:button="@android:color/transparent"
+        android:elevation="@dimen/space_small"
+        android:textColor="@drawable/background_yes_no_radio_text_color_buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/switchCameraImageView"
+        android:layout_width="@dimen/space_xxlarge"
+        android:layout_height="@dimen/space_xxlarge"
+        android:layout_gravity="end|top"
+        android:layout_margin="@dimen/space_xlarge"
+        android:background="@android:color/transparent"
+        android:elevation="@dimen/space_small"
+        android:src="@drawable/ic_switch_camera"
+        android:textColor="@drawable/background_yes_no_radio_text_color_buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

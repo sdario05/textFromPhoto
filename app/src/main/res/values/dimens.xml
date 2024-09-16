@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Margins-->
+    <dimen name="space_ultra_75">340dp</dimen>
+    <dimen name="space_ultra_55">312dp</dimen>
+    <dimen name="space_ultra_50">254dp</dimen>
+    <dimen name="space_ultra_30">200dp</dimen>
+    <dimen name="space_ultra_25">178dp</dimen>
+    <dimen name="space_ultra_22">170dp</dimen>
+    <dimen name="space_ultra_20">160dp</dimen>
+    <dimen name="space_ultra_15">156dp</dimen>
+    <dimen name="space_ultra_10">144dp</dimen>
+    <dimen name="space_ultra_5">120dp</dimen>
+    <dimen name="space_ultra_2">116dp</dimen>
+    <dimen name="space_ultra">104dp</dimen>
+    <dimen name="space_xxxmasive_12">102dp</dimen>
+    <dimen name="space_xxxmasive_10">100dp</dimen>
+    <dimen name="space_xxxmasive_8">96dp</dimen>
+    <dimen name="space_xxxmasive_1">87dp</dimen>
+    <dimen name="space_xxxmasive">86dp</dimen>
+    <dimen name="space_xxmasive_8">85dp</dimen>
+    <dimen name="space_xxmasive_6">83dp</dimen>
+    <dimen name="space_xxmasive_4">81dp</dimen>
+    <dimen name="space_xxmasive_1">76dp</dimen>
+    <dimen name="space_xxmasive">75dp</dimen>
+    <dimen name="space_xmasive_4">74dp</dimen>
+    <dimen name="space_xmasive_3">70dp</dimen>
+    <dimen name="space_xmasive_2">68dp</dimen>
+    <dimen name="space_xmasive">66dp</dimen>
+    <dimen name="space_masive_medium_6">64dp</dimen>
+    <dimen name="space_masive_medium_4">60dp</dimen>
+    <dimen name="space_masive_medium">54dp</dimen>
+    <dimen name="space_masive">52dp</dimen>
+    <dimen name="space_xxhuge_01">50dp</dimen>
+    <dimen name="space_xxhuge_00">48dp</dimen>
+    <dimen name="space_xxhuge">46dp</dimen>
+    <dimen name="space_xhuge_2">44dp</dimen>
+    <dimen name="space_xhuge_3">43dp</dimen>
+    <dimen name="space_xhuge_1">42dp</dimen>
+    <dimen name="space_xhuge_01">40dp</dimen>
+    <dimen name="space_xhuge">38dp</dimen>
+    <dimen name="space_huge_4">37dp</dimen>
+    <dimen name="space_huge_1">36dp</dimen>
+    <dimen name="space_huge_3">35dp</dimen>
+    <dimen name="space_huge_2">34dp</dimen>
+    <dimen name="space_huge">32dp</dimen>
+    <dimen name="space_xxlarge_2">30dp</dimen>
+    <dimen name="space_xxlarge">28dp</dimen>
+    <dimen name="space_xxlarge_medium">26dp</dimen>
+    <dimen name="space_xlarge">24dp</dimen>
+    <dimen name="space_large_medium_1">23dp</dimen>
+    <dimen name="space_large_medium">22dp</dimen>
+    <dimen name="space_large_1">21dp</dimen>
+    <dimen name="space_large">20dp</dimen>
+    <dimen name="space_xregular">18dp</dimen>
+    <dimen name="space_regular_1">17dp</dimen>
+    <dimen name="space_regular">16dp</dimen>
+    <dimen name="space_xxsmall_1">15dp</dimen>
+    <dimen name="space_xxsmall">14dp</dimen>
+    <dimen name="space_xsmall">12dp</dimen>
+    <dimen name="space_small_1">11dp</dimen>
+    <dimen name="space_small">10dp</dimen>
+    <dimen name="space_xxmini_1">9dp</dimen>
+    <dimen name="space_xxmini">8dp</dimen>
+    <dimen name="space_xmini_2">7dp</dimen>
+    <dimen name="space_xmini_1">6dp</dimen>
+    <dimen name="space_xmini">5dp</dimen>
+    <dimen name="space_mini_1">4dp</dimen>
+    <dimen name="space_mini">3dp</dimen>
+    <dimen name="space_xmicro">2dp</dimen>
+    <dimen name="space_micro">1dp</dimen>
+    <dimen name="no_space">0dp</dimen>
+
+    <!--Fonts-->
+    <dimen name="text_size_extreme_20">60sp</dimen>
+    <dimen name="text_size_extreme">48sp</dimen>
+    <dimen name="text_size_xxhuge">32sp</dimen>
+    <dimen name="text_size_medium_huge">28sp</dimen>
+    <dimen name="text_size_xhuge">26sp</dimen>
+    <dimen name="text_size_huge">24sp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_regular">16sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_xsmall_1">13sp</dimen>
+    <dimen name="text_size_xsmall">12sp</dimen>
+    <dimen name="text_size_xxsmall">10sp</dimen>
+    <dimen name="text_size_mini">2sp</dimen>
+
+    <!--Radius-->
+    <dimen name="radius_border_button">8dp</dimen>
+    <dimen name="radius_border_button_huge">50dp</dimen>
+    <dimen name="radius_border_large">20dp</dimen>
+    <dimen name="radius_border_button_large">17dp</dimen>
+    <dimen name="radius_border_project_card">12dp</dimen>
+    <dimen name="radius_border_button_medium">10dp</dimen>
+    <dimen name="radius_border_button_small">4dp</dimen>
+    <dimen name="radius_card_pending">5dp</dimen>
+    <dimen name="tabs_line_height">4dp</dimen>
+    <dimen name="mission_img_size">76dp</dimen>
+
+    <dimen name="mission_category_padding">28dp</dimen>
+
+    <!--CardViews-->
+    <dimen name="card_view_radius">4dp</dimen>
+    <dimen name="card_view_elevation">4dp</dimen>
+    <dimen name="question_image_size">200dp</dimen>
+
+    <dimen name="question_img_size">100dp</dimen>
+
+    <!--Button-->
+    <dimen name="button_height_large">40dp</dimen>
+    <dimen name="button_height">36dp</dimen>
+</resources>
